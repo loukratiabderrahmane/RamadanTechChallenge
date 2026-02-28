@@ -1,6 +1,4 @@
-# 🌙 Ramadan Tech Challenge
-
-# 📘 Jour 1 --- Introduction à l'Intelligence Artificielle
+# 📘 Jour 10 --- Introduction à l'Intelligence Artificielle
 
 ------------------------------------------------------------------------
 
@@ -108,5 +106,9 @@ numériques - Formuler le problème mathématiquement - Laisser
 l'algorithme apprendre les relations
 
 ------------------------------------------------------------------------
+
+Ramadan Tech Challenge 🌙\
+Jour 10 -- Introduction à l'Intelligence Artificielle 🤓
+
 
 Prochaine étape : 📘 Jour 2 --- Machine Learning vs Deep Learning
