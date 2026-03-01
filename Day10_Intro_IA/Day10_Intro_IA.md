@@ -111,4 +111,4 @@ Ramadan Tech Challenge 🌙\
 Jour 10 -- Introduction à l'Intelligence Artificielle 🤓
 
 
-Prochaine étape : 📘 Jour 2 --- Machine Learning vs Deep Learning
+Prochaine étape : 📘 Jour 2 --- Machine Learning 
