@@ -202,5 +202,5 @@ Comprendre les bases du Machine Learning avant de passer aux algorithmes.
 
 ---
 
-### ✅ Prochaine étape
-Implémenter un modèle simple avec Scikit-Learn.
+Ramadan Tech Challenge 🌙\
+Jour 11 -- Machine Learning
