@@ -26,14 +26,6 @@ Un challenge personnel de 30 jours pendant Ramadan pour améliorer ma culture te
 
 ---
 
-## 🚀 Comment contribuer (optionnel)
-
-Si tu veux proposer un sujet ou une amélioration :
-- Ouvre une **Issue**
-- Ou envoie une **Pull Request**
-
----
-
 ## 📌 Auteur
 
 **Loukrati Abderrahmane**  
