@@ -3,10 +3,10 @@ name: 🌙 Auto-update README
 on:
   push:
     branches: [ main, master ]
-  workflow_dispatch:        # allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 permissions:
-  contents: write           # needed to push the updated README
+  contents: write
 
 jobs:
   update-readme:
