@@ -113,7 +113,7 @@ Progression  ██████████████████████�
 
 ---
 
-### 🔥 Deep Learning & IA Avancée *(Jours 18–24)*
+### 🔥 Deep Learning & IA Avancée *(Jours 18–25)*
 
 <!-- AUTO:ROADMAP_DL -->
 | | Jour | Concept | Fichier |
@@ -180,97 +180,14 @@ Progression  ██████████████████████�
 
 ## 📁 Structure du projet
 
-```
-RamadanTechChallenge/
-│
-├── .github/
-│   ├── workflows/
-│   │   └── update-readme.yml       ← 🤖 GitHub Action auto-update
-│   └── scripts/
-│       └── update_readme.py        ← 🐍 Script Python
-│
-├── Day01_Web_Security/
-├── Day02_DevOps/
-├── Day03_Docker/
-├── Day04_Kubernetes/
-├── Day05_CICD/
-├── Day06_Microservices/
-├── Day07_Kafka/
-├── Day08_Cloud/
-├── Day09_ORM/
-├── Day10_Intro_IA/
-├── Day11_ML/
-├── Day12_Modele_ML/
-│   ├── Day12_MLModel.md
-│   └── Day12_MyModel.py            ← 🐍 Code Python
-├── Day13_Classification_Algorithms/
-├── Day14_Model_Evaluation/
-├── Day15_Overfitting_vs_Underfitting/
-├── Day16_Feature_Engineering/
-├── Day17_ML_Pipeline/
-├── Day18_Introduction_Deep_Learning/
-├── Day19_Perceptron_Multicouche/
-├── Day20_Backpropagation_Gradient_Descent/
-├── Day21_CNN_Convolutional_Neural_Networks/
-├── Day22_RNN_Recurrent_Neural_Networks/
-├── Day23_transformer_attention/
-├── Day24_Rag/
-│
-├── README.md                        ← mis à jour automatiquement
-└── LICENSE
-```
+<!-- AUTO:STRUCTURE -->
+<!-- /AUTO:STRUCTURE -->
 
 ---
-
 ## 💡 Concepts clés maîtrisés
 
-<details>
-<summary><b>🔐 Sécurité</b></summary>
-
-- SQL Injection, NoSQL Injection
-- XSS (Cross-Site Scripting)
-- CSRF, Brute Force, DDoS
-- MITM, Broken Authentication
-- JWT, HTTPS, Rate Limiting
-
-</details>
-
-<details>
-<summary><b>⚙️ DevOps & Cloud</b></summary>
-
-- Pipeline CI/CD complet (GitHub Actions)
-- Docker : Images, Containers, Volumes, Networks
-- Kubernetes : Pods, Deployments, Services, HPA
-- Architecture Microservices & API Gateway
-- Apache Kafka : Topics, Partitions, Consumer Groups
-- IaaS / PaaS / SaaS
-
-</details>
-
-<details>
-<summary><b>🧠 Machine Learning</b></summary>
-
-- Supervised / Unsupervised / Reinforcement Learning
-- Logistic Regression, Decision Tree, Random Forest
-- Confusion Matrix, Accuracy, Precision, Recall, F1 Score
-- Overfitting / Underfitting, Bias-Variance Tradeoff
-- Feature Engineering : Scaling, Normalization, Encoding
-- ML Pipelines avec Scikit-Learn
-
-</details>
-
-<details>
-<summary><b>🔥 Deep Learning & IA Avancée</b></summary>
-
-- Artificial Neural Networks (ANN)
-- Multilayer Perceptron (MLP), Fonctions d'activation
-- Backpropagation & Gradient Descent
-- Convolutional Neural Networks (CNN)
-- Recurrent Neural Networks (RNN), Vanishing Gradient
-- Transformer & Attention Mechanism — Self-Attention, BERT, GPT
-- RAG — Retrieval Augmented Generation
-
-</details>
+<!-- AUTO:CONCEPTS -->
+<!-- /AUTO:CONCEPTS -->
 
 ---
 
