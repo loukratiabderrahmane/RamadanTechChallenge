@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-24%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-24%2F30-1D9E75?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -39,16 +39,16 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 | Métrique | Valeur |
 |---|---|
 | 📅 Jours complétés | **24 / 30** |
-| 📝 Fichiers Markdown | **25** |
+| 📝 Fichiers Markdown | **24** |
 | 🗂️ Catégories couvertes | **6** |
 | 🧠 Concepts techniques | **24** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **80%** |
+| 📈 Progression | **80.0%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  ██████████████████████░░░░░  80% — Jour 24/30
+Progression  ██████████████████████░░░░░  80.0% — Jour 24/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -62,6 +62,7 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 01 | 🛡️ Web Security — Types d'attaques backend (SQLi, XSS, CSRF, DDoS...) | [📄 Day01](./Day01_Web_Security/Day01_Web_Security_Backend_Attacks.md) |
+
 <!-- /AUTO:ROADMAP_SECURITY -->
 
 ---
@@ -78,6 +79,7 @@ Progression  ██████████████████████�
 | ✅ | 06 | 🏗️ Architecture Microservices — Patterns, API Gateway | [📄 Day06](./Day06_Microservices/Day06_Architecture_Microservices.md) |
 | ✅ | 07 | 🔥 Apache Kafka — Streaming, Topics, Consumer Groups | [📄 Day07](./Day07_Kafka/Day07_Apache_Kafka_Deep_Dive.md) |
 | ✅ | 08 | ☁️ Cloud Computing — IaaS vs PaaS vs SaaS | [📄 Day08](./Day08_Cloud/Day08_Cloud_Computing_IaaS_PaaS_SaaS.md) |
+
 <!-- /AUTO:ROADMAP_DEVOPS -->
 
 ---
@@ -88,6 +90,7 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 09 | 🔗 ORM Advanced — Index, Transactions, N+1, Eager Loading | [📄 Day09](./Day09_ORM/Day_09_ORM_Advanced_Concepts.md) |
+
 <!-- /AUTO:ROADMAP_ORM -->
 
 ---
@@ -105,6 +108,7 @@ Progression  ██████████████████████�
 | ✅ | 15 | ⚖️ Overfitting vs Underfitting — Bias, Variance, Regularization | [📄 Day15](./Day15_Overfitting_vs_Underfitting/Day15_Overfitting_vs_Underfitting.md) |
 | ✅ | 16 | 🛠️ Feature Engineering — Scaling, Normalization, Encoding | [📄 Day16](./Day16_Feature_Engineering/Day16_Feature_Engineering.md) |
 | ✅ | 17 | 🔧 ML Pipelines — Scikit-Learn Pipeline, Cross Validation | [📄 Day17](./Day17_ML_Pipeline/Day17_ML_Pipeline.md) |
+
 <!-- /AUTO:ROADMAP_IAML -->
 
 ---
@@ -119,8 +123,7 @@ Progression  ██████████████████████�
 | ✅ | 20 | ⬇️ Backpropagation & Gradient Descent — Loss, Learning Rate | [📄 Day20](./Day20_Backpropagation_Gradient_Descent/Day20_Backpropagation_Gradient_Descent.md) |
 | ✅ | 21 | 🖼️ CNN — Convolution, Feature Maps, Pooling, Vision par ordinateur | [📄 Day21](./Day21_CNN_Convolutional_Neural_Networks/Day21_CNN_Convolutional_Neural_Networks.md) |
 | ✅ | 22 | 🔁 RNN — Données séquentielles, Vanishing Gradient, LSTM/GRU | [📄 Day22](./Day22_RNN_Recurrent_Neural_Networks/Day22_RNN_Recurrent_Neural_Networks.md) |
-| ✅ | 23 | 🤗 Transformer & Attention Mechanism — Self-Attention, BERT, GPT | [📄 Day23](./Day23_transformer_attention/) |
-| ✅ | 24 | 🔍 RAG — Retrieval Augmented Generation | [📄 Day24](./Day24_Rag/) |
+
 <!-- /AUTO:ROADMAP_DL -->
 
 ---
@@ -136,6 +139,7 @@ Progression  ██████████████████████�
 | 🔜 | 28 | 🗃️ Bases de données distribuées |
 | 🔜 | 29 | 🌐 System Design — Architecture à grande échelle |
 | 🔜 | 30 | 🏆 Récapitulatif & mini-projet final |
+
 <!-- /AUTO:ROADMAP_UPCOMING -->
 
 ---
@@ -287,7 +291,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-15 12:00 UTC`*
+*Dernière mise à jour automatique : `2026-03-15 01:30 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
