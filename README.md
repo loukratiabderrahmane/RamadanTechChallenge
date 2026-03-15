@@ -1,34 +1,267 @@
-# 🌙💻 Ramadan Tech Challenge
+<div align="center">
 
-Un challenge personnel de 30 jours pendant Ramadan pour améliorer ma culture tech et devenir plus solide en **Backend**, **Cloud/DevOps**, **Systèmes**, et **IA** — avec **un concept par jour**, expliqué simplement, puis résumé dans un fichier `.md`.
+# 🌙 Ramadan Tech Challenge
+
+**30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
+
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-22%2F30-7F77DD?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
+[![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
+[![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
+
+</div>
+
+---
+
+## 📌 À propos
+
+Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma culture tech — avec **un concept par jour**, expliqué clairement, codé quand applicable, puis résumé dans un fichier `.md`.
+
+> *"La discipline est choisir entre ce que tu veux maintenant, et ce que tu veux le plus."*
 
 ---
 
 ## 🎯 Objectifs
 
-- Apprendre **1 concept tech par jour**
-- Résumer chaque concept dans un fichier **Markdown** clair
-- Construire une base solide en :
-  - Cloud & DevOps
-  - Backend (Node.js / Express)
-  - Systèmes & Réseaux
-  - Architecture & Sécurité
-  - IA / ML (selon progression)
+- ✅ Apprendre **1 concept tech par jour**, sans exception
+- ✅ Résumer chaque concept dans un fichier **Markdown structuré**
+- ✅ Construire une base solide dans 5 domaines clés
+- ✅ Développer une **mentalité d'ingénieur senior**
+- 🔄 Déployer un mini-projet récapitulatif à la fin du challenge
 
 ---
 
-## 🧠 Méthode d’apprentissage
+## 📊 Statistiques du projet
 
-1. Comprendre le concept (définition + schéma mental)
-2. Voir un exemple (code / architecture / scénario)
-3. Résumer en `.md`
-4. Faire un mini-exercice ou QCM rapide
+| Métrique | Valeur |
+|---|---|
+| 📅 Jours complétés | **22 / 30** |
+| 📝 Fichiers Markdown | **23** |
+| 🗂️ Catégories couvertes | **5** |
+| 🧠 Concepts techniques | **22** |
+| 🐍 Fichiers de code | **1** (Python ML) |
+| 📈 Progression | **73.3%** |
+
+```
+Progression  ████████████████████░░░░░░░  73% — Jour 22/30
+```
 
 ---
 
-## 📌 Auteur
+## 🗺️ Roadmap complète
 
-**Loukrati Abderrahmane**  
-Challenge Ramadan 🌙 — apprentissage quotidien & discipline 💪
+### 🔐 Sécurité Backend *(Jours 01)*
+
+| Jour | Concept | Fichier |
+|------|---------|---------|
+| 01 | 🛡️ Web Security — Types d'attaques backend (SQLi, XSS, CSRF, DDoS...) | [📄 Day01](./Day01_Web_Security/Day01_Web_Security_Backend_Attacks.md) |
 
 ---
+
+### ⚙️ DevOps & Infrastructure *(Jours 02–08)*
+
+| Jour | Concept | Fichier |
+|------|---------|---------|
+| 02 | 🚀 Introduction complète au DevOps | [📄 Day02](./Day02_DevOps/Day02_DevOps_Introduction.md) |
+| 03 | 🐳 Docker en profondeur — Images, Containers, Compose | [📄 Day03](./Day03_Docker/Day03_Docker_Deep_Dive.md) |
+| 04 | ☸️ Kubernetes — Architecture, Pods, Deployments, HPA | [📄 Day04](./Day04_Kubernetes/Day04_Kubernetes_Deep_Dive.md) |
+| 05 | 🔄 CI/CD complet — GitHub Actions + Docker + Kubernetes | [📄 Day05](./Day05_CICD/Day05_CICD_Docker_GitHub_Kubernetes.md) |
+| 06 | 🏗️ Architecture Microservices — Patterns, API Gateway | [📄 Day06](./Day06_Microservices/Day06_Architecture_Microservices.md) |
+| 07 | 🔥 Apache Kafka — Streaming, Topics, Consumer Groups | [📄 Day07](./Day07_Kafka/Day07_Apache_Kafka_Deep_Dive.md) |
+| 08 | ☁️ Cloud Computing — IaaS vs PaaS vs SaaS | [📄 Day08](./Day08_Cloud/Day08_Cloud_Computing_IaaS_PaaS_SaaS.md) |
+
+---
+
+### 🗄️ Bases de données & ORM *(Jour 09)*
+
+| Jour | Concept | Fichier |
+|------|---------|---------|
+| 09 | 🔗 ORM Advanced — Index, Transactions, N+1, Eager Loading | [📄 Day09](./Day09_ORM/Day_09_ORM_Advanced_Concepts.md) |
+
+---
+
+### 🧠 Intelligence Artificielle & Machine Learning *(Jours 10–17)*
+
+| Jour | Concept | Fichier |
+|------|---------|---------|
+| 10 | 🤖 Introduction à l'IA — ML, Deep Learning, IA Générative | [📄 Day10](./Day10_Intro_IA/Day10_Intro_IA.md) |
+| 11 | 📊 Machine Learning — Types, Pipeline ML, Concepts clés | [📄 Day11](./Day11_ML/Day11_ML.md) |
+| 12 | 🔬 Premier modèle ML — Logistic Regression en Python | [📄 Day12](./Day12_Modele_ML/Day12_MLModel.md) · [🐍 Code](./Day12_Modele_ML/Day12_MyModel.py) |
+| 13 | 🌳 Classification Algorithms — Logistic, Decision Tree, Random Forest | [📄 Day13](./Day13_Classification_Algorithms/Day13_Classification_Algorithms.md) |
+| 14 | 📈 Model Evaluation — Confusion Matrix, Accuracy, Precision, F1 | [📄 Day14](./Day14_Model_Evaluation/Day14_Model_Evaluation.md) |
+| 15 | ⚖️ Overfitting vs Underfitting — Bias, Variance, Regularization | [📄 Day15](./Day15_Overfitting_vs_Underfitting/Day15_Overfitting_vs_Underfitting.md) |
+| 16 | 🛠️ Feature Engineering — Scaling, Normalization, Encoding | [📄 Day16](./Day16_Feature_Engineering/Day16_Feature_Engineering.md) |
+| 17 | 🔧 ML Pipelines — Scikit-Learn Pipeline, Cross Validation | [📄 Day17](./Day17_ML_Pipeline/Day17_ML_Pipeline.md) |
+
+---
+
+### 🔥 Deep Learning *(Jours 18–22)*
+
+| Jour | Concept | Fichier |
+|------|---------|---------|
+| 18 | 🧬 Introduction au Deep Learning — ANN, Layers, Forward Prop | [📄 Day18](./Day18_Introduction_Deep_Learning/Day18_Introduction_Deep_Learning.md) |
+| 19 | 🧠 Perceptron Multicouche (MLP) — Architecture, ReLU, Sigmoid | [📄 Day19](./Day19_Perceptron_Multicouche/Day19_Perceptron_Multicouche.md) |
+| 20 | ⬇️ Backpropagation & Gradient Descent — Loss, Learning Rate | [📄 Day20](./Day20_Backpropagation_Gradient_Descent/Day20_Backpropagation_Gradient_Descent.md) |
+| 21 | 🖼️ CNN — Convolution, Feature Maps, Pooling, Vision par ordinateur | [📄 Day21](./Day21_CNN_Convolutional_Neural_Networks/Day21_CNN_Convolutional_Neural_Networks.md) |
+| 22 | 🔁 RNN — Données séquentielles, Vanishing Gradient, LSTM/GRU | [📄 Day22](./Day22_RNN_Recurrent_Neural_Networks/Day22_RNN_Recurrent_Neural_Networks.md) |
+
+---
+
+### 🔜 À venir *(Jours 23–30)*
+
+| Jour | Concept prévu |
+|------|---------------|
+| 23 | 🤗 Transformers & Attention Mechanism |
+| 24 | 💬 NLP — Natural Language Processing |
+| 25 | 🧪 MLOps — Déploiement de modèles ML |
+| 26 | 📡 APIs REST avancées & GraphQL |
+| 27 | 🔒 Sécurité avancée — OAuth2, JWT, Zero Trust |
+| 28 | 🗃️ Bases de données distribuées |
+| 29 | 🌐 System Design — Architecture à grande échelle |
+| 30 | 🏆 Récapitulatif & mini-projet final |
+
+---
+
+## 🛠️ Stack technique
+
+### Infrastructure & DevOps
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+
+### Languages & Frameworks
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+
+### Machine Learning & Deep Learning
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+---
+
+## 🧠 Méthode d'apprentissage
+
+```
+1️⃣  Comprendre    →  Définition + schéma mental + cas d'usage réel
+2️⃣  Pratiquer     →  Exemple de code ou architecture concrète
+3️⃣  Résumer       →  Fichier Markdown structuré avec best practices
+4️⃣  Valider       →  Mini-exercice ou QCM pour consolider
+```
+
+---
+
+## 📁 Structure du projet
+
+```
+ramadan-tech-challenge/
+│
+├── Day01_Web_Security/
+├── Day02_DevOps/
+├── Day03_Docker/
+├── Day04_Kubernetes/
+├── Day05_CICD/
+├── Day06_Microservices/
+├── Day07_Kafka/
+├── Day08_Cloud/
+├── Day09_ORM/
+├── Day10_Intro_IA/
+├── Day11_ML/
+├── Day12_Modele_ML/
+│   ├── Day12_MLModel.md
+│   └── Day12_MyModel.py        ← 🐍 Code Python
+├── Day13_Classification_Algorithms/
+├── Day14_Model_Evaluation/
+├── Day15_Overfitting_vs_Underfitting/
+├── Day16_Feature_Engineering/
+├── Day17_ML_Pipeline/
+├── Day18_Introduction_Deep_Learning/
+├── Day19_Perceptron_Multicouche/
+├── Day20_Backpropagation_Gradient_Descent/
+├── Day21_CNN_Convolutional_Neural_Networks/
+├── Day22_RNN_Recurrent_Neural_Networks/
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 💡 Concepts clés maîtrisés
+
+<details>
+<summary><b>🔐 Sécurité</b></summary>
+
+- SQL Injection, NoSQL Injection
+- XSS (Cross-Site Scripting)
+- CSRF, Brute Force, DDoS
+- MITM, Broken Authentication
+- JWT, HTTPS, Rate Limiting
+
+</details>
+
+<details>
+<summary><b>⚙️ DevOps & Cloud</b></summary>
+
+- Pipeline CI/CD complet (GitHub Actions)
+- Docker : Images, Containers, Volumes, Networks
+- Kubernetes : Pods, Deployments, Services, HPA
+- Architecture Microservices & API Gateway
+- Apache Kafka : Topics, Partitions, Consumer Groups
+- IaaS / PaaS / SaaS
+
+</details>
+
+<details>
+<summary><b>🧠 Machine Learning</b></summary>
+
+- Supervised / Unsupervised / Reinforcement Learning
+- Logistic Regression, Decision Tree, Random Forest
+- Confusion Matrix, Accuracy, Precision, Recall, F1 Score
+- Overfitting / Underfitting, Bias-Variance Tradeoff
+- Feature Engineering : Scaling, Normalization, Encoding
+- ML Pipelines avec Scikit-Learn
+
+</details>
+
+<details>
+<summary><b>🔥 Deep Learning</b></summary>
+
+- Artificial Neural Networks (ANN)
+- Multilayer Perceptron (MLP), Fonctions d'activation
+- Backpropagation & Gradient Descent
+- Convolutional Neural Networks (CNN)
+- Recurrent Neural Networks (RNN), Vanishing Gradient
+
+</details>
+
+---
+
+## 📚 Sources & Références
+
+- [Scikit-Learn Documentation](https://scikit-learn.org/stable/)
+- [TensorFlow Documentation](https://www.tensorflow.org/)
+- Goodfellow, Bengio, Courville — *Deep Learning* (MIT Press, 2016)
+- Aurélien Géron — *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow*
+- Hastie, Tibshirani, Friedman — *The Elements of Statistical Learning*
+
+---
+
+## 👤 Auteur
+
+**Loukrati Abderrahmane**
+
+*Challenge Ramadan 🌙 — apprentissage quotidien & discipline 💪*
+
+---
+
+<div align="center">
+
+**🌙 Ramadan Tech Challenge · 30 jours · 2026**
+
+*MIT License © 2026 Loukrati Abderrahmane*
+
+</div>
