@@ -170,12 +170,15 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
              "Day21_CNN_Convolutional_Neural_Networks", "Day21_CNN_Convolutional_Neural_Networks.md", None),
         22: ("🔁", "RNN — Données séquentielles, Vanishing Gradient, LSTM/GRU",
              "Day22_RNN_Recurrent_Neural_Networks", "Day22_RNN_Recurrent_Neural_Networks.md", None),
+        23: ("🤗", "Transformers & Attention Mechanism",
+             "Day23_transformer_attention", "Day23_transformer_attention.md", None),
+        24: ("💬", "RAG — Retrieval Augmented Generation",
+             "Day24_Rag", "Day24_Rag.md", None),
+        25: ("🚀", "MLOps — Déploiement de modèles ML",
+             "Day25_MLops", "Day25_MLops.md", None),
     }
 
     upcoming = {
-        23: ("🤗", "Transformers & Attention Mechanism"),
-        24: ("💬", "NLP — Natural Language Processing"),
-        25: ("🧪", "MLOps — Déploiement de modèles ML"),
         26: ("📡", "APIs REST avancées & GraphQL"),
         27: ("🔒", "Sécurité avancée — OAuth2, JWT, Zero Trust"),
         28: ("🗃️", "Bases de données distribuées"),
@@ -213,20 +216,17 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
     for d in range(10, 18):
         ia_ml += row(d) + "\n"
 
-    # DL
+    # DL (jours 18 à 25 inclus)
     dl = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
-    for d in range(18, 23):
+    for d in range(18, 26):
         dl += row(d) + "\n"
 
-    # Upcoming (only days not yet done)
+    # Upcoming (only days not yet done, jours 26 à 30)
     up_rows = []
-    for d in range(23, 31):
+    for d in range(26, 31):
         if d not in completed_set:
             emoji, title = upcoming.get(d, ("❓", "À définir"))
             up_rows.append(f"| 🔜 | {d:02d} | {emoji} {title} |")
-        else:
-            # If somehow done, just skip from upcoming
-            pass
 
     upcoming_table = ""
     if up_rows:
@@ -244,13 +244,6 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
 
 
 # ── PATCH README ─────────────────────────────────────────────────────────────
-# We use sentinel comments in the README to locate sections:
-#   <!-- AUTO:BADGES -->...<!-- /AUTO:BADGES -->
-#   <!-- AUTO:STATS -->...<!-- /AUTO:STATS -->
-#   <!-- AUTO:PROGRESS -->...<!-- /AUTO:PROGRESS -->
-#   <!-- AUTO:ROADMAP_SECURITY -->...<!-- /AUTO:ROADMAP_SECURITY -->
-#   etc.
-
 def replace_section(content: str, key: str, new_content: str) -> str:
     pattern = rf"(<!-- AUTO:{key} -->).*?(<!-- /AUTO:{key} -->)"
     replacement = rf"\1\n{new_content}\n\2"
