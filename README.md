@@ -181,12 +181,134 @@ Progression  ██████████████████████�
 ## 📁 Structure du projet
 
 <!-- AUTO:STRUCTURE -->
+```
+RamadanTechChallenge/
+├── .github/
+│   ├── workflows/
+│   │   └── update-readme.yml        ← ⚙️ GitHub Action auto-update
+│   └── scripts/
+│       └── update_readme.py          ← 🐍 Script Python
+│
+├── Day01_Web_Security/
+│   └── Day01_Web_Security_Backend_Attacks.md
+├── Day02_DevOps/
+│   └── Day02_DevOps_Introduction.md
+├── Day03_Docker/
+│   └── Day03_Docker_Deep_Dive.md
+├── Day04_Kubernetes/
+│   └── Day04_Kubernetes_Deep_Dive.md
+├── Day05_CICD/
+│   └── Day05_CICD_Docker_GitHub_Kubernetes.md
+├── Day06_Microservices/
+│   └── Day06_Architecture_Microservices.md
+├── Day07_Kafka/
+│   └── Day07_Apache_Kafka_Deep_Dive.md
+├── Day08_Cloud/
+│   └── Day08_Cloud_Computing_IaaS_PaaS_SaaS.md
+├── Day09_ORM/
+│   └── Day_09_ORM_Advanced_Concepts.md
+├── Day10_Intro_IA/
+│   └── Day10_Intro_IA.md
+├── Day11_ML/
+│   └── Day11_ML.md
+├── Day12_Modele_ML/
+│   ├── Day12_MLModel.md
+│   └── Day12_MyModel.py    ← 🐍 Code Python
+├── Day13_Classification_Algorithms/
+│   └── Day13_Classification_Algorithms.md
+├── Day14_Model_Evaluation/
+│   └── Day14_Model_Evaluation.md
+├── Day15_Overfitting_vs_Underfitting/
+│   └── Day15_Overfitting_vs_Underfitting.md
+├── Day16_Feature_Engineering/
+│   └── Day16_Feature_Engineering.md
+├── Day17_ML_Pipeline/
+│   └── Day17_ML_Pipeline.md
+├── Day18_Introduction_Deep_Learning/
+│   └── Day18_Introduction_Deep_Learning.md
+├── Day19_Perceptron_Multicouche/
+│   └── Day19_Perceptron_Multicouche.md
+├── Day20_Backpropagation_Gradient_Descent/
+│   └── Day20_Backpropagation_Gradient_Descent.md
+├── Day21_CNN_Convolutional_Neural_Networks/
+│   └── Day21_CNN_Convolutional_Neural_Networks.md
+├── Day22_RNN_Recurrent_Neural_Networks/
+│   └── Day22_RNN_Recurrent_Neural_Networks.md
+├── Day23_transformer_attention/
+│   └── Day23_transformer_attention.md
+├── Day24_Rag/
+│   └── Day24_Rag.md
+├── Day25_MLops/
+│   └── Day25_MLops.md
+│
+├── README.md                         ← mis à jour automatiquement
+└── LICENSE
+```
 <!-- /AUTO:STRUCTURE -->
 
 ---
 ## 💡 Concepts clés maîtrisés
 
 <!-- AUTO:CONCEPTS -->
+<details open>
+<summary><b>🛡️ Sécurité</b></summary>
+
+- SQL Injection, NoSQL Injection
+- XSS (Cross-Site Scripting)
+- CSRF, Brute Force, DDoS
+- MITM, Broken Authentication
+- JWT, HTTPS, Rate Limiting
+
+</details>
+
+<details open>
+<summary><b>⚙️ DevOps & Cloud</b></summary>
+
+- Pipeline CI/CD complet (GitHub Actions)
+- Docker : Images, Containers, Volumes, Networks
+- Kubernetes : Pods, Deployments, Services, HPA
+- Architecture Microservices & API Gateway
+- Apache Kafka : Topics, Partitions, Consumer Groups
+- IaaS / PaaS / SaaS
+
+</details>
+
+<details open>
+<summary><b>🗄️ ORM & Base de données</b></summary>
+
+- ORM Advanced — Index, Transactions
+- N+1 Query Problem & Eager Loading
+- Optimisation des requêtes SQL
+
+</details>
+
+<details open>
+<summary><b>📊 Machine Learning</b></summary>
+
+- Introduction à l'IA — ML, DL, IA Générative
+- Supervised / Unsupervised / Reinforcement Learning
+- Logistic Regression, Decision Tree, Random Forest
+- Confusion Matrix, Accuracy, Precision, Recall, F1 Score
+- Overfitting / Underfitting, Bias-Variance Tradeoff
+- Feature Engineering : Scaling, Normalization, Encoding
+- ML Pipelines avec Scikit-Learn
+
+</details>
+
+<details open>
+<summary><b>🔥 Deep Learning & IA Avancée</b></summary>
+
+- Artificial Neural Networks (ANN)
+- Multilayer Perceptron (MLP), Fonctions d'activation
+- Backpropagation & Gradient Descent
+- Convolutional Neural Networks (CNN)
+- Recurrent Neural Networks (RNN), Vanishing Gradient
+- Transformer & Attention Mechanism — Self-Attention, BERT, GPT
+- RAG — Retrieval Augmented Generation
+- MLOps — Déploiement, FastAPI, Monitoring, Data Drift
+
+</details>
+
 <!-- /AUTO:CONCEPTS -->
 
 ---
@@ -210,7 +332,7 @@ Progression  ██████████████████████�
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-15 14:07 UTC`*
+*Dernière mise à jour automatique : `2026-03-15 14:12 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
