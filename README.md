@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-24%2F30-1D9E75?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-25%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -38,17 +38,17 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 <!-- AUTO:STATS -->
 | Métrique | Valeur |
 |---|---|
-| 📅 Jours complétés | **24 / 30** |
-| 📝 Fichiers Markdown | **24** |
-| 🗂️ Catégories couvertes | **6** |
-| 🧠 Concepts techniques | **24** |
+| 📅 Jours complétés | **25 / 30** |
+| 📝 Fichiers Markdown | **25** |
+| 🗂️ Catégories couvertes | **7** |
+| 🧠 Concepts techniques | **25** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **80.0%** |
+| 📈 Progression | **83.3%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  ██████████████████████░░░░░  80.0% — Jour 24/30
+Progression  ██████████████████████░░░░░  83.3% — Jour 25/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -133,7 +133,6 @@ Progression  ██████████████████████�
 <!-- AUTO:ROADMAP_UPCOMING -->
 | | Jour | Concept prévu |
 |---|------|---------------|
-| 🔜 | 25 | 🧪 MLOps — Déploiement de modèles ML |
 | 🔜 | 26 | 📡 APIs REST avancées & GraphQL |
 | 🔜 | 27 | 🔒 Sécurité avancée — OAuth2, JWT, Zero Trust |
 | 🔜 | 28 | 🗃️ Bases de données distribuées |
@@ -291,7 +290,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-15 01:30 UTC`*
+*Dernière mise à jour automatique : `2026-03-15 12:33 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
