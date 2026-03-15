@@ -38,44 +38,6 @@ CATEGORY_EMOJI = {
     "system":   "🌐",
 }
 
-# Concepts associés à chaque jour
-DAY_CONCEPTS = {
-    1:  ("security", "🛡️ Sécurité", [
-        "SQL Injection, NoSQL Injection",
-        "XSS (Cross-Site Scripting)",
-        "CSRF, Brute Force, DDoS",
-        "MITM, Broken Authentication",
-        "JWT, HTTPS, Rate Limiting",
-    ]),
-    2:  ("devops", "⚙️ DevOps & Cloud", [
-        "Pipeline CI/CD complet (GitHub Actions)",
-        "Docker : Images, Containers, Volumes, Networks",
-        "Kubernetes : Pods, Deployments, Services, HPA",
-        "Architecture Microservices & API Gateway",
-        "Apache Kafka : Topics, Partitions, Consumer Groups",
-        "IaaS / PaaS / SaaS",
-    ]),
-    10: ("ia", "🧠 IA & Machine Learning", [
-        "Introduction à l'IA — ML, DL, IA Générative",
-        "Supervised / Unsupervised / Reinforcement Learning",
-        "Logistic Regression, Decision Tree, Random Forest",
-        "Confusion Matrix, Accuracy, Precision, Recall, F1 Score",
-        "Overfitting / Underfitting, Bias-Variance Tradeoff",
-        "Feature Engineering : Scaling, Normalization, Encoding",
-        "ML Pipelines avec Scikit-Learn",
-    ]),
-    18: ("dl", "🔥 Deep Learning & IA Avancée", [
-        "Artificial Neural Networks (ANN)",
-        "Multilayer Perceptron (MLP), Fonctions d'activation",
-        "Backpropagation & Gradient Descent",
-        "Convolutional Neural Networks (CNN)",
-        "Recurrent Neural Networks (RNN), Vanishing Gradient",
-        "Transformer & Attention Mechanism — Self-Attention, BERT, GPT",
-        "RAG — Retrieval Augmented Generation",
-        "MLOps — Déploiement, FastAPI, Monitoring, Data Drift",
-    ]),
-}
-
 # ── SCAN REPO ────────────────────────────────────────────────────────────────
 def scan_days(root: Path) -> list[int]:
     completed = []
@@ -148,7 +110,6 @@ def build_badges(completed: list[int]) -> str:
 
 # ── BUILD STRUCTURE ───────────────────────────────────────────────────────────
 def build_structure(root: Path) -> str:
-    """Auto-generate the project structure tree from actual Day* folders."""
     day_folders = sorted(
         [f for f in root.iterdir() if f.is_dir() and re.match(r"[Dd]ay\d+", f.name)],
         key=lambda f: int(re.search(r"\d+", f.name).group())
@@ -185,19 +146,12 @@ def build_structure(root: Path) -> str:
 
 # ── BUILD CONCEPTS CLÉS ───────────────────────────────────────────────────────
 def build_concepts(completed: list[int]) -> str:
-    """
-    Auto-generate 'Concepts clés maîtrisés' section based on completed days.
-    Each category appears only if at least one of its days is completed.
-    """
     completed_set = set(completed)
 
-    # Define categories in order with their day ranges
     categories = [
         {
-            "start_day": 1,
-            "category": "security",
-            "title": "🛡️ Sécurité",
             "days_range": [1],
+            "title": "🛡️ Sécurité",
             "concepts": [
                 "SQL Injection, NoSQL Injection",
                 "XSS (Cross-Site Scripting)",
@@ -207,10 +161,8 @@ def build_concepts(completed: list[int]) -> str:
             ],
         },
         {
-            "start_day": 2,
-            "category": "devops",
-            "title": "⚙️ DevOps & Cloud",
             "days_range": list(range(2, 9)),
+            "title": "⚙️ DevOps & Cloud",
             "concepts": [
                 "Pipeline CI/CD complet (GitHub Actions)",
                 "Docker : Images, Containers, Volumes, Networks",
@@ -221,10 +173,8 @@ def build_concepts(completed: list[int]) -> str:
             ],
         },
         {
-            "start_day": 9,
-            "category": "orm",
-            "title": "🗄️ ORM & Base de données",
             "days_range": [9],
+            "title": "🗄️ ORM & Base de données",
             "concepts": [
                 "ORM Advanced — Index, Transactions",
                 "N+1 Query Problem & Eager Loading",
@@ -232,10 +182,8 @@ def build_concepts(completed: list[int]) -> str:
             ],
         },
         {
-            "start_day": 10,
-            "category": "ml",
-            "title": "📊 Machine Learning",
             "days_range": list(range(10, 18)),
+            "title": "📊 Machine Learning",
             "concepts": [
                 "Introduction à l'IA — ML, DL, IA Générative",
                 "Supervised / Unsupervised / Reinforcement Learning",
@@ -247,10 +195,8 @@ def build_concepts(completed: list[int]) -> str:
             ],
         },
         {
-            "start_day": 18,
-            "category": "dl",
-            "title": "🔥 Deep Learning & IA Avancée",
             "days_range": list(range(18, 26)),
+            "title": "🔥 Deep Learning & IA Avancée",
             "concepts": [
                 "Artificial Neural Networks (ANN)",
                 "Multilayer Perceptron (MLP), Fonctions d'activation",
@@ -262,11 +208,29 @@ def build_concepts(completed: list[int]) -> str:
                 "MLOps — Déploiement, FastAPI, Monitoring, Data Drift",
             ],
         },
+        {
+            # Jour 26 et 28 = backend, Jour 27 = security avancée
+            "days_range": [26, 27, 28],
+            "title": "🔧 Backend Avancé & Sécurité",
+            "concepts": [
+                "APIs REST avancées & GraphQL",
+                "Sécurité avancée — OAuth2, JWT, Zero Trust",
+                "Bases de données distribuées",
+            ],
+        },
+        {
+            "days_range": [29, 30],
+            "title": "🌐 System Design & Projet Final",
+            "concepts": [
+                "System Design — Architecture à grande échelle",
+                "Récapitulatif & mini-projet final",
+            ],
+        },
     ]
 
     lines = []
     for cat in categories:
-        # Show category only if at least one day in its range is completed
+        # Afficher la catégorie seulement si au moins un jour est complété
         if any(d in completed_set for d in cat["days_range"]):
             lines.append(f"<details open>")
             lines.append(f"<summary><b>{cat['title']}</b></summary>\n")
@@ -332,14 +296,16 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
              "Day24_Rag", "Day24_Rag.md", None),
         25: ("🚀", "MLOps — Déploiement de modèles ML",
              "Day25_MLops", "Day25_MLops.md", None),
-    }
-
-    upcoming = {
-        26: ("📡", "APIs REST avancées & GraphQL"),
-        27: ("🔒", "Sécurité avancée — OAuth2, JWT, Zero Trust"),
-        28: ("🗃️", "Bases de données distribuées"),
-        29: ("🌐", "System Design — Architecture à grande échelle"),
-        30: ("🏆", "Récapitulatif & mini-projet final"),
+        26: ("📡", "APIs REST avancées & GraphQL",
+             "Day26_APIs_REST", "Day26_APIs_REST.md", None),
+        27: ("🔒", "Sécurité avancée — OAuth2, JWT, Zero Trust",
+             "Day27_Security_Advanced", "Day27_Security_Advanced.md", None),
+        28: ("🗃️", "Bases de données distribuées",
+             "Day28_Distributed_Databases", "Day28_Distributed_Databases.md", None),
+        29: ("🌐", "System Design — Architecture à grande échelle",
+             "Day29_System_Design", "Day29_System_Design.md", None),
+        30: ("🏆", "Récapitulatif & mini-projet final",
+             "Day30_Final_Project", "Day30_Final_Project.md", None),
     }
 
     def status(day):
@@ -354,28 +320,34 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
             link += f" · [🐍 Code](./{extra})"
         return f"| {status(day)} | {day:02d} | {emoji} {title} | {link} |"
 
+    # Security
     sec = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     sec += row(1) + "\n"
 
+    # DevOps
     devops = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(2, 9):
         devops += row(d) + "\n"
 
+    # ORM
     orm = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     orm += row(9) + "\n"
 
+    # IA + ML
     ia_ml = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(10, 18):
         ia_ml += row(d) + "\n"
 
+    # DL (jours 18 à 25 inclus)
     dl = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(18, 26):
         dl += row(d) + "\n"
 
+    # Upcoming — seulement les jours pas encore complétés (26 à 30)
     up_rows = []
     for d in range(26, 31):
         if d not in completed_set:
-            emoji, title = upcoming.get(d, ("❓", "À définir"))
+            emoji, title, *_ = days_meta[d]
             up_rows.append(f"| 🔜 | {d:02d} | {emoji} {title} |")
 
     upcoming_table = ""
