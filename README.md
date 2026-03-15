@@ -123,6 +123,9 @@ Progression  ██████████████████████�
 | ✅ | 20 | ⬇️ Backpropagation & Gradient Descent — Loss, Learning Rate | [📄 Day20](./Day20_Backpropagation_Gradient_Descent/Day20_Backpropagation_Gradient_Descent.md) |
 | ✅ | 21 | 🖼️ CNN — Convolution, Feature Maps, Pooling, Vision par ordinateur | [📄 Day21](./Day21_CNN_Convolutional_Neural_Networks/Day21_CNN_Convolutional_Neural_Networks.md) |
 | ✅ | 22 | 🔁 RNN — Données séquentielles, Vanishing Gradient, LSTM/GRU | [📄 Day22](./Day22_RNN_Recurrent_Neural_Networks/Day22_RNN_Recurrent_Neural_Networks.md) |
+| ✅ | 23 | 🤗 Transformers & Attention Mechanism | [📄 Day23](./Day23_transformer_attention/Day23_transformer_attention.md) |
+| ✅ | 24 | 💬 RAG — Retrieval Augmented Generation | [📄 Day24](./Day24_Rag/Day24_Rag.md) |
+| ✅ | 25 | 🚀 MLOps — Déploiement de modèles ML | [📄 Day25](./Day25_MLops/Day25_MLops.md) |
 
 <!-- /AUTO:ROADMAP_DL -->
 
@@ -290,7 +293,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-15 12:33 UTC`*
+*Dernière mise à jour automatique : `2026-03-15 12:39 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
