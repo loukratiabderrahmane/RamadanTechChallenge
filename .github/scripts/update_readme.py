@@ -4,7 +4,6 @@ Auto-update README.md stats based on Day* folders in the repo.
 Run by GitHub Actions on every push to main.
 """
 
-import os
 import re
 from pathlib import Path
 from datetime import datetime
@@ -13,7 +12,7 @@ from datetime import datetime
 TOTAL_DAYS = 30
 README_PATH = Path("README.md")
 
-# Map each day to its category (for coloring the progress bar)
+# Map each day to its category
 DAY_CATEGORIES = {
     1:  "security",
     2:  "devops", 3: "devops", 4: "devops", 5: "devops",
@@ -39,24 +38,58 @@ CATEGORY_EMOJI = {
     "system":   "🌐",
 }
 
+# Concepts associés à chaque jour
+DAY_CONCEPTS = {
+    1:  ("security", "🛡️ Sécurité", [
+        "SQL Injection, NoSQL Injection",
+        "XSS (Cross-Site Scripting)",
+        "CSRF, Brute Force, DDoS",
+        "MITM, Broken Authentication",
+        "JWT, HTTPS, Rate Limiting",
+    ]),
+    2:  ("devops", "⚙️ DevOps & Cloud", [
+        "Pipeline CI/CD complet (GitHub Actions)",
+        "Docker : Images, Containers, Volumes, Networks",
+        "Kubernetes : Pods, Deployments, Services, HPA",
+        "Architecture Microservices & API Gateway",
+        "Apache Kafka : Topics, Partitions, Consumer Groups",
+        "IaaS / PaaS / SaaS",
+    ]),
+    10: ("ia", "🧠 IA & Machine Learning", [
+        "Introduction à l'IA — ML, DL, IA Générative",
+        "Supervised / Unsupervised / Reinforcement Learning",
+        "Logistic Regression, Decision Tree, Random Forest",
+        "Confusion Matrix, Accuracy, Precision, Recall, F1 Score",
+        "Overfitting / Underfitting, Bias-Variance Tradeoff",
+        "Feature Engineering : Scaling, Normalization, Encoding",
+        "ML Pipelines avec Scikit-Learn",
+    ]),
+    18: ("dl", "🔥 Deep Learning & IA Avancée", [
+        "Artificial Neural Networks (ANN)",
+        "Multilayer Perceptron (MLP), Fonctions d'activation",
+        "Backpropagation & Gradient Descent",
+        "Convolutional Neural Networks (CNN)",
+        "Recurrent Neural Networks (RNN), Vanishing Gradient",
+        "Transformer & Attention Mechanism — Self-Attention, BERT, GPT",
+        "RAG — Retrieval Augmented Generation",
+        "MLOps — Déploiement, FastAPI, Monitoring, Data Drift",
+    ]),
+}
+
 # ── SCAN REPO ────────────────────────────────────────────────────────────────
 def scan_days(root: Path) -> list[int]:
-    """Return sorted list of completed day numbers (folders Day01..Day30)."""
     completed = []
     for folder in root.iterdir():
         if folder.is_dir():
             m = re.match(r"[Dd]ay(\d{1,2})", folder.name)
             if m:
                 day_num = int(m.group(1))
-                # Count as done only if it contains at least one .md file
-                md_files = list(folder.glob("*.md"))
-                if md_files:
+                if list(folder.glob("*.md")):
                     completed.append(day_num)
     return sorted(set(completed))
 
 
 def count_md_files(root: Path) -> int:
-    """Count all .md files in Day* folders."""
     count = 0
     for folder in root.iterdir():
         if folder.is_dir() and re.match(r"[Dd]ay\d+", folder.name):
@@ -65,7 +98,6 @@ def count_md_files(root: Path) -> int:
 
 
 def count_py_files(root: Path) -> int:
-    """Count all .py files in Day* folders."""
     count = 0
     for folder in root.iterdir():
         if folder.is_dir() and re.match(r"[Dd]ay\d+", folder.name):
@@ -74,14 +106,12 @@ def count_py_files(root: Path) -> int:
 
 
 def get_categories(completed_days: list[int]) -> int:
-    """Count distinct categories covered."""
     cats = {DAY_CATEGORIES.get(d) for d in completed_days if DAY_CATEGORIES.get(d)}
     return len(cats)
 
 
 # ── BUILD PROGRESS BAR ───────────────────────────────────────────────────────
 def build_progress_bar(completed: list[int], total: int = 30) -> str:
-    """ASCII progress bar: filled = done, empty = remaining."""
     filled = len(completed)
     pct = round((filled / total) * 100, 1)
     bar_len = 27
@@ -116,15 +146,141 @@ def build_badges(completed: list[int]) -> str:
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)"""
 
 
-# ── BUILD ROADMAP ROWS ───────────────────────────────────────────────────────
-def build_roadmap_table(completed: list[int]) -> dict[str, str]:
+# ── BUILD STRUCTURE ───────────────────────────────────────────────────────────
+def build_structure(root: Path) -> str:
+    """Auto-generate the project structure tree from actual Day* folders."""
+    day_folders = sorted(
+        [f for f in root.iterdir() if f.is_dir() and re.match(r"[Dd]ay\d+", f.name)],
+        key=lambda f: int(re.search(r"\d+", f.name).group())
+    )
+
+    lines = []
+    lines.append("```")
+    lines.append("RamadanTechChallenge/")
+    lines.append("├── .github/")
+    lines.append("│   ├── workflows/")
+    lines.append("│   │   └── update-readme.yml        ← ⚙️ GitHub Action auto-update")
+    lines.append("│   └── scripts/")
+    lines.append("│       └── update_readme.py          ← 🐍 Script Python")
+    lines.append("│")
+
+    for folder in day_folders:
+        md_files = sorted(folder.glob("*.md"))
+        py_files = sorted(folder.glob("*.py"))
+        all_files = list(md_files) + list(py_files)
+
+        lines.append(f"├── {folder.name}/")
+        for i, f in enumerate(all_files):
+            connector = "└──" if i == len(all_files) - 1 else "├──"
+            label = "    ← 🐍 Code Python" if f.suffix == ".py" else ""
+            lines.append(f"│   {connector} {f.name}{label}")
+
+    lines.append("│")
+    lines.append("├── README.md                         ← mis à jour automatiquement")
+    lines.append("└── LICENSE")
+    lines.append("```")
+
+    return "\n".join(lines)
+
+
+# ── BUILD CONCEPTS CLÉS ───────────────────────────────────────────────────────
+def build_concepts(completed: list[int]) -> str:
     """
-    Returns a dict of section_key -> markdown table rows.
-    Keys: security, devops, orm, ia_ml, dl, upcoming
+    Auto-generate 'Concepts clés maîtrisés' section based on completed days.
+    Each category appears only if at least one of its days is completed.
     """
     completed_set = set(completed)
 
-    # Day metadata: (day, emoji, title, folder, extra_link)
+    # Define categories in order with their day ranges
+    categories = [
+        {
+            "start_day": 1,
+            "category": "security",
+            "title": "🛡️ Sécurité",
+            "days_range": [1],
+            "concepts": [
+                "SQL Injection, NoSQL Injection",
+                "XSS (Cross-Site Scripting)",
+                "CSRF, Brute Force, DDoS",
+                "MITM, Broken Authentication",
+                "JWT, HTTPS, Rate Limiting",
+            ],
+        },
+        {
+            "start_day": 2,
+            "category": "devops",
+            "title": "⚙️ DevOps & Cloud",
+            "days_range": list(range(2, 9)),
+            "concepts": [
+                "Pipeline CI/CD complet (GitHub Actions)",
+                "Docker : Images, Containers, Volumes, Networks",
+                "Kubernetes : Pods, Deployments, Services, HPA",
+                "Architecture Microservices & API Gateway",
+                "Apache Kafka : Topics, Partitions, Consumer Groups",
+                "IaaS / PaaS / SaaS",
+            ],
+        },
+        {
+            "start_day": 9,
+            "category": "orm",
+            "title": "🗄️ ORM & Base de données",
+            "days_range": [9],
+            "concepts": [
+                "ORM Advanced — Index, Transactions",
+                "N+1 Query Problem & Eager Loading",
+                "Optimisation des requêtes SQL",
+            ],
+        },
+        {
+            "start_day": 10,
+            "category": "ml",
+            "title": "📊 Machine Learning",
+            "days_range": list(range(10, 18)),
+            "concepts": [
+                "Introduction à l'IA — ML, DL, IA Générative",
+                "Supervised / Unsupervised / Reinforcement Learning",
+                "Logistic Regression, Decision Tree, Random Forest",
+                "Confusion Matrix, Accuracy, Precision, Recall, F1 Score",
+                "Overfitting / Underfitting, Bias-Variance Tradeoff",
+                "Feature Engineering : Scaling, Normalization, Encoding",
+                "ML Pipelines avec Scikit-Learn",
+            ],
+        },
+        {
+            "start_day": 18,
+            "category": "dl",
+            "title": "🔥 Deep Learning & IA Avancée",
+            "days_range": list(range(18, 26)),
+            "concepts": [
+                "Artificial Neural Networks (ANN)",
+                "Multilayer Perceptron (MLP), Fonctions d'activation",
+                "Backpropagation & Gradient Descent",
+                "Convolutional Neural Networks (CNN)",
+                "Recurrent Neural Networks (RNN), Vanishing Gradient",
+                "Transformer & Attention Mechanism — Self-Attention, BERT, GPT",
+                "RAG — Retrieval Augmented Generation",
+                "MLOps — Déploiement, FastAPI, Monitoring, Data Drift",
+            ],
+        },
+    ]
+
+    lines = []
+    for cat in categories:
+        # Show category only if at least one day in its range is completed
+        if any(d in completed_set for d in cat["days_range"]):
+            lines.append(f"<details open>")
+            lines.append(f"<summary><b>{cat['title']}</b></summary>\n")
+            for concept in cat["concepts"]:
+                lines.append(f"- {concept}")
+            lines.append(f"\n</details>\n")
+
+    return "\n".join(lines)
+
+
+# ── BUILD ROADMAP ROWS ───────────────────────────────────────────────────────
+def build_roadmap_table(completed: list[int]) -> dict[str, str]:
+    completed_set = set(completed)
+
     days_meta = {
         1:  ("🛡️", "Web Security — Types d'attaques backend (SQLi, XSS, CSRF, DDoS...)",
              "Day01_Web_Security", "Day01_Web_Security_Backend_Attacks.md", None),
@@ -198,30 +354,24 @@ def build_roadmap_table(completed: list[int]) -> dict[str, str]:
             link += f" · [🐍 Code](./{extra})"
         return f"| {status(day)} | {day:02d} | {emoji} {title} | {link} |"
 
-    # Security
     sec = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     sec += row(1) + "\n"
 
-    # DevOps
     devops = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(2, 9):
         devops += row(d) + "\n"
 
-    # ORM
     orm = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     orm += row(9) + "\n"
 
-    # IA + ML
     ia_ml = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(10, 18):
         ia_ml += row(d) + "\n"
 
-    # DL (jours 18 à 25 inclus)
     dl = "| | Jour | Concept | Fichier |\n|---|------|---------|---------|\n"
     for d in range(18, 26):
         dl += row(d) + "\n"
 
-    # Upcoming (only days not yet done, jours 26 à 30)
     up_rows = []
     for d in range(26, 31):
         if d not in completed_set:
@@ -264,16 +414,12 @@ def update_readme(root: Path):
 
     readme = README_PATH.read_text(encoding="utf-8")
 
-    # Badges
-    readme = replace_section(readme, "BADGES", build_badges(completed))
+    readme = replace_section(readme, "BADGES",           build_badges(completed))
+    readme = replace_section(readme, "STATS",            build_stats_table(completed, md_count, py_count))
+    readme = replace_section(readme, "PROGRESS",         build_progress_bar(completed))
+    readme = replace_section(readme, "STRUCTURE",        build_structure(root))
+    readme = replace_section(readme, "CONCEPTS",         build_concepts(completed))
 
-    # Stats table
-    readme = replace_section(readme, "STATS", build_stats_table(completed, md_count, py_count))
-
-    # Progress bar
-    readme = replace_section(readme, "PROGRESS", build_progress_bar(completed))
-
-    # Roadmap tables
     tables = build_roadmap_table(completed)
     readme = replace_section(readme, "ROADMAP_SECURITY", tables["security"])
     readme = replace_section(readme, "ROADMAP_DEVOPS",   tables["devops"])
@@ -282,7 +428,6 @@ def update_readme(root: Path):
     readme = replace_section(readme, "ROADMAP_DL",       tables["dl"])
     readme = replace_section(readme, "ROADMAP_UPCOMING", tables["upcoming"])
 
-    # Last updated timestamp
     ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     readme = replace_section(readme, "UPDATED", f"*Dernière mise à jour automatique : `{ts}`*")
 
