@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-25%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-26%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -38,17 +38,17 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 <!-- AUTO:STATS -->
 | Métrique | Valeur |
 |---|---|
-| 📅 Jours complétés | **25 / 30** |
-| 📝 Fichiers Markdown | **25** |
-| 🗂️ Catégories couvertes | **7** |
-| 🧠 Concepts techniques | **25** |
+| 📅 Jours complétés | **26 / 30** |
+| 📝 Fichiers Markdown | **26** |
+| 🗂️ Catégories couvertes | **8** |
+| 🧠 Concepts techniques | **26** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **83.3%** |
+| 📈 Progression | **86.7%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  ██████████████████████░░░░░  83.3% — Jour 25/30
+Progression  ███████████████████████░░░░  86.7% — Jour 26/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -136,7 +136,6 @@ Progression  ██████████████████████�
 <!-- AUTO:ROADMAP_UPCOMING -->
 | | Jour | Concept prévu |
 |---|------|---------------|
-| 🔜 | 26 | 📡 APIs REST avancées & GraphQL |
 | 🔜 | 27 | 🔒 Sécurité avancée — OAuth2, JWT, Zero Trust |
 | 🔜 | 28 | 🗃️ Bases de données distribuées |
 | 🔜 | 29 | 🌐 System Design — Architecture à grande échelle |
@@ -240,6 +239,8 @@ RamadanTechChallenge/
 │   └── Day24_Rag.md
 ├── Day25_MLops/
 │   └── Day25_MLops.md
+├── Day26_rest_graphql/
+│   └── Day26_rest_graphql.md
 │
 ├── README.md                         ← mis à jour automatiquement
 └── LICENSE
@@ -309,6 +310,15 @@ RamadanTechChallenge/
 
 </details>
 
+<details open>
+<summary><b>🔧 Backend Avancé & Sécurité</b></summary>
+
+- APIs REST avancées & GraphQL
+- Sécurité avancée — OAuth2, JWT, Zero Trust
+- Bases de données distribuées
+
+</details>
+
 <!-- /AUTO:CONCEPTS -->
 
 ---
@@ -332,7 +342,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-15 14:19 UTC`*
+*Dernière mise à jour automatique : `2026-03-16 02:01 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
