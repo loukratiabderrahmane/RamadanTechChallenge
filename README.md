@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-26%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-27%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -38,17 +38,17 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 <!-- AUTO:STATS -->
 | Métrique | Valeur |
 |---|---|
-| 📅 Jours complétés | **26 / 30** |
-| 📝 Fichiers Markdown | **26** |
+| 📅 Jours complétés | **27 / 30** |
+| 📝 Fichiers Markdown | **27** |
 | 🗂️ Catégories couvertes | **8** |
-| 🧠 Concepts techniques | **26** |
+| 🧠 Concepts techniques | **27** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **86.7%** |
+| 📈 Progression | **90.0%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  ███████████████████████░░░░  86.7% — Jour 26/30
+Progression  ████████████████████████░░░  90.0% — Jour 27/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -136,7 +136,6 @@ Progression  ██████████████████████�
 <!-- AUTO:ROADMAP_UPCOMING -->
 | | Jour | Concept prévu |
 |---|------|---------------|
-| 🔜 | 27 | 🔒 Sécurité avancée — OAuth2, JWT, Zero Trust |
 | 🔜 | 28 | 🗃️ Bases de données distribuées |
 | 🔜 | 29 | 🌐 System Design — Architecture à grande échelle |
 | 🔜 | 30 | 🏆 Récapitulatif & mini-projet final |
@@ -241,6 +240,8 @@ RamadanTechChallenge/
 │   └── Day25_MLops.md
 ├── Day26_rest_graphql/
 │   └── Day26_rest_graphql.md
+├── Day27_securite_avancee_oauth2_jwt_zerotrust/
+│   └── Day27_securite_avancee_oauth2_jwt_zerotrust.md
 │
 ├── README.md                         ← mis à jour automatiquement
 └── LICENSE
@@ -342,7 +343,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-16 02:01 UTC`*
+*Dernière mise à jour automatique : `2026-03-17 23:25 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
