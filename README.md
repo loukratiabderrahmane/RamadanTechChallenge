@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-28%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-29%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -38,17 +38,17 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 <!-- AUTO:STATS -->
 | Métrique | Valeur |
 |---|---|
-| 📅 Jours complétés | **28 / 30** |
-| 📝 Fichiers Markdown | **28** |
-| 🗂️ Catégories couvertes | **8** |
-| 🧠 Concepts techniques | **28** |
+| 📅 Jours complétés | **29 / 30** |
+| 📝 Fichiers Markdown | **29** |
+| 🗂️ Catégories couvertes | **9** |
+| 🧠 Concepts techniques | **29** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **93.3%** |
+| 📈 Progression | **96.7%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  █████████████████████████░░  93.3% — Jour 28/30
+Progression  ██████████████████████████░  96.7% — Jour 29/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -136,7 +136,6 @@ Progression  ██████████████████████�
 <!-- AUTO:ROADMAP_UPCOMING -->
 | | Jour | Concept prévu |
 |---|------|---------------|
-| 🔜 | 29 | 🌐 System Design — Architecture à grande échelle |
 | 🔜 | 30 | 🏆 Récapitulatif & mini-projet final |
 
 <!-- /AUTO:ROADMAP_UPCOMING -->
@@ -243,6 +242,8 @@ RamadanTechChallenge/
 │   └── Day27_securite_avancee_oauth2_jwt_zerotrust.md
 ├── Day28_bases_donnees_distribuees/
 │   └── Day28_bases_donnees_distribuees.md
+├── Day29_system_design/
+│   └── Day29_system_design.md
 │
 ├── README.md                         ← mis à jour automatiquement
 └── LICENSE
@@ -321,6 +322,14 @@ RamadanTechChallenge/
 
 </details>
 
+<details open>
+<summary><b>🌐 System Design & Projet Final</b></summary>
+
+- System Design — Architecture à grande échelle
+- Récapitulatif & mini-projet final
+
+</details>
+
 <!-- /AUTO:CONCEPTS -->
 
 ---
@@ -344,7 +353,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-18 23:26 UTC`*
+*Dernière mise à jour automatique : `2026-03-19 12:47 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
