@@ -5,7 +5,7 @@
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
 <!-- AUTO:BADGES -->
-[![Days Completed](https://img.shields.io/badge/Jours%20complétés-29%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
+[![Days Completed](https://img.shields.io/badge/Jours%20complétés-30%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
@@ -38,17 +38,17 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 <!-- AUTO:STATS -->
 | Métrique | Valeur |
 |---|---|
-| 📅 Jours complétés | **29 / 30** |
-| 📝 Fichiers Markdown | **29** |
+| 📅 Jours complétés | **30 / 30** |
+| 📝 Fichiers Markdown | **30** |
 | 🗂️ Catégories couvertes | **9** |
-| 🧠 Concepts techniques | **29** |
+| 🧠 Concepts techniques | **30** |
 | 🐍 Fichiers de code | **1** |
-| 📈 Progression | **96.7%** |
+| 📈 Progression | **100.0%** |
 <!-- /AUTO:STATS -->
 
 <!-- AUTO:PROGRESS -->
 ```
-Progression  ██████████████████████████░  96.7% — Jour 29/30
+Progression  ███████████████████████████  100.0% — Jour 30/30
 ```
 <!-- /AUTO:PROGRESS -->
 
@@ -134,9 +134,6 @@ Progression  ██████████████████████�
 ### 🔜 À venir *(Jours 25–30)*
 
 <!-- AUTO:ROADMAP_UPCOMING -->
-| | Jour | Concept prévu |
-|---|------|---------------|
-| 🔜 | 30 | 🏆 Récapitulatif & mini-projet final |
 
 <!-- /AUTO:ROADMAP_UPCOMING -->
 
@@ -244,6 +241,8 @@ RamadanTechChallenge/
 │   └── Day28_bases_donnees_distribuees.md
 ├── Day29_system_design/
 │   └── Day29_system_design.md
+├── Day30_mini_projet_finale/
+│   └── Day30_Student_Score_Predictor.md
 │
 ├── README.md                         ← mis à jour automatiquement
 └── LICENSE
@@ -353,7 +352,7 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-19 12:47 UTC`*
+*Dernière mise à jour automatique : `2026-03-22 02:18 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
