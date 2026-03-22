@@ -4,12 +4,11 @@
 
 **30 jours · 1 concept par jour · Backend, DevOps, Cloud & IA**
 
-<!-- AUTO:BADGES -->
 [![Days Completed](https://img.shields.io/badge/Jours%20complétés-30%2F30-E85D24?style=for-the-badge&logo=bookstack&logoColor=white)](.)
 [![License](https://img.shields.io/badge/License-MIT-1D9E75?style=for-the-badge)](./LICENSE)
 [![Language](https://img.shields.io/badge/Lang-Python%20%7C%20JavaScript-185FA5?style=for-the-badge&logo=python&logoColor=white)](.)
 [![Challenge](https://img.shields.io/badge/Ramadan-1447%20H-E85D24?style=for-the-badge)](.)
-<!-- /AUTO:BADGES -->
+[![Status](https://img.shields.io/badge/Status-Completed%20✅-1D9E75?style=for-the-badge)](.)
 
 </div>
 
@@ -29,7 +28,7 @@ Un challenge personnel de **30 jours** pendant Ramadan pour solidifier ma cultur
 - ✅ Résumer chaque concept dans un fichier **Markdown structuré**
 - ✅ Construire une base solide dans 5 domaines clés
 - ✅ Développer une **mentalité d'ingénieur senior**
-- 🔄 Déployer un mini-projet récapitulatif à la fin du challenge
+- ✅ Déployer un mini-projet récapitulatif — **Student Score Predictor**
 
 ---
 
@@ -62,7 +61,6 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 01 | 🛡️ Web Security — Types d'attaques backend (SQLi, XSS, CSRF, DDoS...) | [📄 Day01](./Day01_Web_Security/Day01_Web_Security_Backend_Attacks.md) |
-
 <!-- /AUTO:ROADMAP_SECURITY -->
 
 ---
@@ -79,7 +77,6 @@ Progression  ██████████████████████�
 | ✅ | 06 | 🏗️ Architecture Microservices — Patterns, API Gateway | [📄 Day06](./Day06_Microservices/Day06_Architecture_Microservices.md) |
 | ✅ | 07 | 🔥 Apache Kafka — Streaming, Topics, Consumer Groups | [📄 Day07](./Day07_Kafka/Day07_Apache_Kafka_Deep_Dive.md) |
 | ✅ | 08 | ☁️ Cloud Computing — IaaS vs PaaS vs SaaS | [📄 Day08](./Day08_Cloud/Day08_Cloud_Computing_IaaS_PaaS_SaaS.md) |
-
 <!-- /AUTO:ROADMAP_DEVOPS -->
 
 ---
@@ -90,7 +87,6 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 09 | 🔗 ORM Advanced — Index, Transactions, N+1, Eager Loading | [📄 Day09](./Day09_ORM/Day_09_ORM_Advanced_Concepts.md) |
-
 <!-- /AUTO:ROADMAP_ORM -->
 
 ---
@@ -108,7 +104,6 @@ Progression  ██████████████████████�
 | ✅ | 15 | ⚖️ Overfitting vs Underfitting — Bias, Variance, Regularization | [📄 Day15](./Day15_Overfitting_vs_Underfitting/Day15_Overfitting_vs_Underfitting.md) |
 | ✅ | 16 | 🛠️ Feature Engineering — Scaling, Normalization, Encoding | [📄 Day16](./Day16_Feature_Engineering/Day16_Feature_Engineering.md) |
 | ✅ | 17 | 🔧 ML Pipelines — Scikit-Learn Pipeline, Cross Validation | [📄 Day17](./Day17_ML_Pipeline/Day17_ML_Pipeline.md) |
-
 <!-- /AUTO:ROADMAP_IAML -->
 
 ---
@@ -126,16 +121,30 @@ Progression  ██████████████████████�
 | ✅ | 23 | 🤗 Transformers & Attention Mechanism | [📄 Day23](./Day23_transformer_attention/Day23_transformer_attention.md) |
 | ✅ | 24 | 💬 RAG — Retrieval Augmented Generation | [📄 Day24](./Day24_Rag/Day24_Rag.md) |
 | ✅ | 25 | 🚀 MLOps — Déploiement de modèles ML | [📄 Day25](./Day25_MLops/Day25_MLops.md) |
-
 <!-- /AUTO:ROADMAP_DL -->
 
 ---
 
-### 🔜 À venir *(Jours 25–30)*
+### 🔧 Backend Avancé & Sécurité *(Jours 26–28)*
 
-<!-- AUTO:ROADMAP_UPCOMING -->
+<!-- AUTO:ROADMAP_BACKEND -->
+| | Jour | Concept | Fichier |
+|---|------|---------|---------|
+| ✅ | 26 | 📡 APIs REST Avancées & GraphQL | [📄 Day26](./Day26_rest_graphql/Day26_rest_graphql.md) |
+| ✅ | 27 | 🔒 Sécurité Avancée — OAuth2, JWT, Zero Trust | [📄 Day27](./Day27_securite_avancee_oauth2_jwt_zerotrust/Day27_securite_avancee_oauth2_jwt_zerotrust.md) |
+| ✅ | 28 | 🗃️ Bases de Données Distribuées — CAP, Sharding, Réplication | [📄 Day28](./Day28_bases_donnees_distribuees/Day28_bases_donnees_distribuees.md) |
+<!-- /AUTO:ROADMAP_BACKEND -->
 
-<!-- /AUTO:ROADMAP_UPCOMING -->
+---
+
+### 🌐 System Design & Projet Final *(Jours 29–30)*
+
+<!-- AUTO:ROADMAP_FINAL -->
+| | Jour | Concept | Fichier |
+|---|------|---------|---------|
+| ✅ | 29 | 🌐 System Design — Architecture à Grande Échelle | [📄 Day29](./Day29_system_design/Day29_system_design.md) |
+| ✅ | 30 | 🏆 Projet Final — Student Score Predictor (FastAPI + React + Docker) | [📄 Day30](./Day30_mini_projet_finale/Day30_Student_Score_Predictor.md) |
+<!-- /AUTO:ROADMAP_FINAL -->
 
 ---
 
@@ -152,6 +161,8 @@ Progression  ██████████████████████�
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
 ### Machine Learning & Deep Learning
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
@@ -250,6 +261,7 @@ RamadanTechChallenge/
 <!-- /AUTO:STRUCTURE -->
 
 ---
+
 ## 💡 Concepts clés maîtrisés
 
 <!-- AUTO:CONCEPTS -->
@@ -316,20 +328,52 @@ RamadanTechChallenge/
 <summary><b>🔧 Backend Avancé & Sécurité</b></summary>
 
 - APIs REST avancées & GraphQL
-- Sécurité avancée — OAuth2, JWT, Zero Trust
-- Bases de données distribuées
+- Versioning, Pagination, Filtrage, Rate Limiting
+- Sécurité avancée — OAuth2, JWT, Refresh Tokens, Zero Trust
+- RBAC — Role-Based Access Control
+- Bases de données distribuées — CAP, Sharding, Réplication
+- ACID vs BASE, Cassandra, MongoDB distribué
 
 </details>
 
 <details open>
 <summary><b>🌐 System Design & Projet Final</b></summary>
 
-- System Design — Architecture à grande échelle
-- Récapitulatif & mini-projet final
+- System Design — Scalabilité horizontale, Load Balancing, CDN
+- Caching (Redis), Message Queues, Circuit Breaker
+- Étude de cas : concevoir un système à grande échelle
+- Projet final : Student Score Predictor (FastAPI + React + Docker)
 
 </details>
 
 <!-- /AUTO:CONCEPTS -->
+
+---
+
+## 🏆 Projet Final — Student Score Predictor
+
+Un système ML complet déployé en production, clôturant les 30 jours du challenge.
+
+```
+Jour 12 :  30 lignes Python · script standalone
+    ↓
+Jour 17 :  + StandardScaler · ML Pipeline propre
+    ↓
+Jour 25 :  + FastAPI · modèle en production
+    ↓
+Jour 30 :  + React · Docker · REST API · projet complet ✅
+```
+
+**👉 [github.com/loukratiabderrahmane/student-score-predictor](https://github.com/loukratiabderrahmane/student-score-predictor)**
+
+```bash
+git clone https://github.com/loukratiabderrahmane/student-score-predictor.git
+cd student-score-predictor
+docker-compose up --build
+```
+
+- Frontend → **http://localhost:3000**
+- API Docs → **http://localhost:8000/docs**
 
 ---
 
@@ -339,7 +383,8 @@ RamadanTechChallenge/
 - [TensorFlow Documentation](https://www.tensorflow.org/)
 - Goodfellow, Bengio, Courville — *Deep Learning* (MIT Press, 2016)
 - Aurélien Géron — *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow*
-- Hastie, Tibshirani, Friedman — *The Elements of Statistical Learning*
+- Kleppmann, Martin — *Designing Data-Intensive Applications* (O'Reilly, 2017)
+- Xu, Alex — *System Design Interview*
 
 ---
 
@@ -352,12 +397,12 @@ RamadanTechChallenge/
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour automatique : `2026-03-22 02:18 UTC`*
+*Dernière mise à jour : `2026-03-22`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
 
-**🌙 Ramadan Tech Challenge · 30 jours · 2026**
+**🌙 Ramadan Tech Challenge · 30 jours · 2026 · Completed ✅**
 
 *MIT License © 2026 Loukrati Abderrahmane*
 
