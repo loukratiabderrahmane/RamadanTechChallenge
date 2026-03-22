@@ -61,6 +61,7 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 01 | 🛡️ Web Security — Types d'attaques backend (SQLi, XSS, CSRF, DDoS...) | [📄 Day01](./Day01_Web_Security/Day01_Web_Security_Backend_Attacks.md) |
+
 <!-- /AUTO:ROADMAP_SECURITY -->
 
 ---
@@ -77,6 +78,7 @@ Progression  ██████████████████████�
 | ✅ | 06 | 🏗️ Architecture Microservices — Patterns, API Gateway | [📄 Day06](./Day06_Microservices/Day06_Architecture_Microservices.md) |
 | ✅ | 07 | 🔥 Apache Kafka — Streaming, Topics, Consumer Groups | [📄 Day07](./Day07_Kafka/Day07_Apache_Kafka_Deep_Dive.md) |
 | ✅ | 08 | ☁️ Cloud Computing — IaaS vs PaaS vs SaaS | [📄 Day08](./Day08_Cloud/Day08_Cloud_Computing_IaaS_PaaS_SaaS.md) |
+
 <!-- /AUTO:ROADMAP_DEVOPS -->
 
 ---
@@ -87,6 +89,7 @@ Progression  ██████████████████████�
 | | Jour | Concept | Fichier |
 |---|------|---------|---------|
 | ✅ | 09 | 🔗 ORM Advanced — Index, Transactions, N+1, Eager Loading | [📄 Day09](./Day09_ORM/Day_09_ORM_Advanced_Concepts.md) |
+
 <!-- /AUTO:ROADMAP_ORM -->
 
 ---
@@ -104,6 +107,7 @@ Progression  ██████████████████████�
 | ✅ | 15 | ⚖️ Overfitting vs Underfitting — Bias, Variance, Regularization | [📄 Day15](./Day15_Overfitting_vs_Underfitting/Day15_Overfitting_vs_Underfitting.md) |
 | ✅ | 16 | 🛠️ Feature Engineering — Scaling, Normalization, Encoding | [📄 Day16](./Day16_Feature_Engineering/Day16_Feature_Engineering.md) |
 | ✅ | 17 | 🔧 ML Pipelines — Scikit-Learn Pipeline, Cross Validation | [📄 Day17](./Day17_ML_Pipeline/Day17_ML_Pipeline.md) |
+
 <!-- /AUTO:ROADMAP_IAML -->
 
 ---
@@ -121,6 +125,7 @@ Progression  ██████████████████████�
 | ✅ | 23 | 🤗 Transformers & Attention Mechanism | [📄 Day23](./Day23_transformer_attention/Day23_transformer_attention.md) |
 | ✅ | 24 | 💬 RAG — Retrieval Augmented Generation | [📄 Day24](./Day24_Rag/Day24_Rag.md) |
 | ✅ | 25 | 🚀 MLOps — Déploiement de modèles ML | [📄 Day25](./Day25_MLops/Day25_MLops.md) |
+
 <!-- /AUTO:ROADMAP_DL -->
 
 ---
@@ -328,21 +333,16 @@ RamadanTechChallenge/
 <summary><b>🔧 Backend Avancé & Sécurité</b></summary>
 
 - APIs REST avancées & GraphQL
-- Versioning, Pagination, Filtrage, Rate Limiting
-- Sécurité avancée — OAuth2, JWT, Refresh Tokens, Zero Trust
-- RBAC — Role-Based Access Control
-- Bases de données distribuées — CAP, Sharding, Réplication
-- ACID vs BASE, Cassandra, MongoDB distribué
+- Sécurité avancée — OAuth2, JWT, Zero Trust
+- Bases de données distribuées
 
 </details>
 
 <details open>
 <summary><b>🌐 System Design & Projet Final</b></summary>
 
-- System Design — Scalabilité horizontale, Load Balancing, CDN
-- Caching (Redis), Message Queues, Circuit Breaker
-- Étude de cas : concevoir un système à grande échelle
-- Projet final : Student Score Predictor (FastAPI + React + Docker)
+- System Design — Architecture à grande échelle
+- Récapitulatif & mini-projet final
 
 </details>
 
@@ -397,7 +397,7 @@ docker-compose up --build
 ---
 
 <!-- AUTO:UPDATED -->
-*Dernière mise à jour : `2026-03-22`*
+*Dernière mise à jour automatique : `2026-03-22 02:32 UTC`*
 <!-- /AUTO:UPDATED -->
 
 <div align="center">
